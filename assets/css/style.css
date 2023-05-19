@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4dfdf;
+}
+.container {
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #c1d0b5;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.card-left {
+  width: 530px;
+  overflow: hidden;
+}
+
+.main-img {
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.img-select {
+  display: flex;
+  margin-top: 4px;
+}
+.img-select .img {
+  border: 5px solid white;
+}
+.img-select .active {
+  border-color: goldenrod;
+  border-radius: 5px;
+}
+
+.star {
+  margin-top: 8px;
+  color: #c4dfdf;
+}
+.star i:nth-child(1),
+.star i:nth-child(2),
+.star i:nth-child(3) {
+  color: #e57c23;
+}
+.price {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.price p {
+  font-weight: bold;
+}
+.price span {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.para {
+  margin: 1rem 0;
+}
+
+.form {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.form select {
+  margin-bottom: 1rem;
+}
+
+.input-group button {
+  outline: none;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.form p {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.input-group div {
+  display: flex;
+}
+.input-group input {
+  outline: none;
+}
+
+.add {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #e57c23;
+  padding: 0.4rem;
+}
+
+.add:hover {
+  background-color: white;
+  color: #e57c23;
+}
